@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "lib": ["es2015", "DOM"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noErrorTruncation": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "strict": true,
+    "target": "es5",
+    "types": ["node"]
+  },
+  "exclude": ["**/__mocks__/*", "**/*.aot.ts", "**/*.spec.ts", "**/*/webpack.*.ts", "*/*/node_modules", "*/*/setup-jest.ts", "node_modules"]
+}
