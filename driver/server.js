@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
 
     switch (route) {
         case '/css/main.css':
-            res.writeHead(200, { 'Content-Type': 'text/javascript' });
+            res.writeHead(200, { 'Content-Type': 'text/css' });
 
             fs.readFile(path.join(__dirname, 'css', 'main.css'), function (err, data) {
                 res.end(data);
@@ -20,6 +20,14 @@ http.createServer(function (req, res) {
             res.writeHead(200, { 'Content-Type': 'text/javascript' });
 
             fs.readFile(path.join(__dirname, '..', 'dist', 'life.js'), function (err, data) {
+                res.end(data);
+            });
+
+            break;
+        case '/favicon.ico':
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+
+            fs.readFile(path.join(__dirname, 'favicon.ico'), function (err, data) {
                 res.end(data);
             });
 

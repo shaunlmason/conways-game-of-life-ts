@@ -1,3 +1,8 @@
+import { App } from './public-api';
 import { Game } from './public-api';
 
-Game.start();
+window.onload = () => {
+    const app = new App(new Game());
+
+    app.initialize();
+};

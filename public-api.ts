@@ -1,5 +1,2 @@
-export { Cell } from './src/cell';
-export { CellState } from './src/cell-state';
-export { Grid } from './src/grid';
-export { Renderer } from './src/renderer';
+export { App } from './src/app';
 export { Game } from './src/game';
